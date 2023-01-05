@@ -107,6 +107,9 @@ a {
 .navbar .navlink ul li a {
   color: var(--nav-color);
 }
+.toggle-bar {
+  display: none;
+}
 /* banner  */
 
 .banner .container {
@@ -208,6 +211,9 @@ span:last-child {
   text-align: left;
 }
 /* resume section  */
+.resume {
+  margin: 30px 20px;
+}
 .resume h2 {
   padding: 70px 0;
 }
@@ -237,7 +243,8 @@ p {
 /* footer section  */
 .footer {
   background: var(--header-bg);
-  padding: 100px 0;
+  padding: 100px 20px;
+  width: 100%;
 }
 .footer .container {
   display: grid;

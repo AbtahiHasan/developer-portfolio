@@ -89,6 +89,16 @@
   .message {
     padding: 20px;
   }
+  .toggle-bar {
+    display: block;
+  }
+  .toggle-bar img {
+    width: 25px;
+    height: 25px;
+  }
+  .navlink {
+    display: none;
+  }
 }
 @media (max-width: 650px) {
   .btn {
