@@ -1,0 +1,277 @@
+/* special css here   */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --btn-primary: #fd6e0a;
+  --dark-color: #181818;
+  --white-color: #ffffff;
+  --nav-color: #474747;
+  --description-color: #757575;
+  --header-bg: #fff8f3;
+  --box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05),
+    -2px -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* common css  */
+.container {
+  width: 1140px;
+  margin: auto;
+}
+.btn {
+  height: 64px;
+  padding: 0 30px;
+  background: var(--btn-primary);
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white-color);
+}
+h2 {
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+h5 {
+  font-size: 20px;
+  color: var(--description-color);
+  font-weight: 400;
+}
+p {
+  font-size: 18px;
+  text-align: center;
+}
+.btn a {
+  color: var(--white-color);
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline;
+}
+a {
+  text-decoration: none;
+}
+/* navbar design  */
+.header {
+  background: var(--header-bg);
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, left;
+  overflow: hidden;
+  background-size: 600px 350px, 90px 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.navbar .container .logo h2 {
+  font-size: 45px;
+  font-weight: 800;
+  color: var(--dark-color);
+}
+.navbar .container .logo h2 span {
+  color: var(--btn-primary);
+}
+.navbar .navlink ul {
+  display: flex;
+  align-items: center;
+}
+.navbar .navlink ul li {
+  margin-right: 51px;
+}
+.navbar .navlink ul li a {
+  color: var(--nav-color);
+}
+/* banner  */
+
+.banner .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .container .info {
+  width: 60%;
+}
+.banner .container .info .sub-title {
+  font-size: 45px;
+  font-size: 600;
+}
+.banner .container .info .title {
+  font-size: 85px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.banner .container .description {
+  color: var(--description-color);
+  font-size: 18px;
+  margin-top: 30px;
+}
+.banner .container .image-container {
+  width: 40%;
+  margin-left: 200px;
+}
+.banner .container .image-container img {
+  width: 400px;
+  height: 500px;
+  margin-bottom: -15px;
+}
+.banner .container .info .btn {
+  margin-top: 30px;
+  margin-right: 15px;
+}
+.banner .container .info .contact {
+  background: transparent;
+  border: 2px solid var(--btn-primary);
+}
+.banner .container .info .contact a {
+  color: var(--btn-primary);
+}
+.banner .container .info .contact:hover {
+  background: var(--btn-primary);
+}
+.banner .container .info .contact:hover a {
+  color: var(--white-color);
+}
+/* about section  */
+.about .container {
+  text-align: center;
+  margin-top: 80px;
+  background: var(--header-bg);
+}
+.about .content {
+  padding: 131px 156px;
+}
+.about .content .title {
+  font-size: 35px;
+  font-weight: 800;
+}
+.about .content .description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.about .content table {
+  width: 100%;
+  margin-top: 35px;
+}
+.content table thead tr th {
+  font-weight: 400;
+}
+.content table tbody tr td {
+  font-weight: 800;
+}
+/* what i do  */
+.what-i-do .description {
+  padding: 30px 70px;
+}
+.i-do-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 35px;
+}
+.i-do-card .card {
+  padding: 25px;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+}
+.i-do-card h3 {
+  text-align: left;
+}
+.i-do-card p {
+  text-align: left;
+}
+/* resume section  */
+.resume h2 {
+  padding: 70px 0;
+}
+.resume .resume-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.resume .resume-card .card {
+  padding: 20px 10px;
+}
+.resume .resume-card .card h3,
+h4,
+h5,
+p {
+  text-align: left;
+  padding: 12px 0;
+}
+.resume .resume-card .card hr {
+  margin: 20px 0;
+}
+.download-cv {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 100px 0;
+}
+/* footer section  */
+.footer {
+  background: var(--header-bg);
+  padding: 100px 0;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.connect h2 {
+  padding: 30px 0;
+  text-align: left;
+}
+.connect .social-icon {
+  margin-top: 30px;
+}
+.connect .social-icon li {
+  margin-right: 15px;
+}
+.message h2 {
+  padding: 30px 0;
+  text-align: left;
+}
+.message form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.message form input[type="text"],
+input[type="email"] {
+  width: 95%;
+  padding: 15px 10px;
+}
+.message form textarea {
+  height: 180px;
+  width: 95%;
+  padding: 10px;
+  resize: none;
+}
+#submit {
+  width: 40%;
+}
