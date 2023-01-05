@@ -96,8 +96,27 @@
     width: 25px;
     height: 25px;
   }
-  .navlink {
+  .navbar .navlink {
     display: none;
+  }
+  .navbar .navlink.active {
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    background: var(--description-color);
+    padding: 10px;
+  }
+  .navbar .navlink.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .navlink.active ul li {
+    margin-top: 30px;
+  }
+  .navbar .navlink.active ul li a {
+    color: var(--white-color);
   }
 }
 @media (max-width: 650px) {
